@@ -90,7 +90,6 @@ const Footer = () => {
           value={language}
           onChange={handleChange}
           displayEmpty
-          classes={styles.footerSelect}
           inputProps={{ "aria-label": "Without label" }}
         >
           <MenuItem value="usa">
