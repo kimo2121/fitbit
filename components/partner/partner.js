@@ -14,7 +14,7 @@ const Partner = () => {
         <p>OUR BRAND PARTNERS</p>
         <div className={styles.brands}>
           {images.map((item, index) => (
-            <Image key={index} src={item} />
+            <Image alt="item" key={index} src={item} />
           ))}
         </div>
       </div>

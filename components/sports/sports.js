@@ -23,7 +23,7 @@ const Sports = () => {
     <div id="Browse Classes" className={styles.sportsContainer}>
       {data.map((item, index) => (
         <div key={index} className={styles.card}>
-          <Image className={styles.cardImg} src={item.img} />
+          <Image alt="card" className={styles.cardImg} src={item.img} />
           <div className={styles.cardName}>
             <div>
               <h1>{item.title1}</h1>

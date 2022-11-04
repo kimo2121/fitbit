@@ -13,7 +13,7 @@ const BlogSample = ({ img, leftSample, label }) => {
       id="Blog"
       className={leftSample ? styles.blogSampleLeft : styles.blogSampleRight}
     >
-      <Image src={img} />
+      <Image alt="img" src={img} />
       <div className={styles.sampleDetail}>
         <h1>{label}</h1>
         <Button label="Read Blog" ClassNameAtt="sampleButton" />

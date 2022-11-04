@@ -18,7 +18,7 @@ const Banner = () => {
         <Button
           ClassNameAtt="bannerBtn2nd"
           bannerBtn={true}
-          icon={<Image src={play} alt="" />}
+          icon={<Image src={play} alt="play" />}
           label="Watch Demo"
         />
       </div>
