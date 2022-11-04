@@ -3,9 +3,7 @@ import Button from "../button/button";
 import styles from "./banner.module.css";
 import play from "../../public/static/icons/Play.png";
 import Image from "next/image";
-import ReactPlayer from "react-player";
 // import video from "../../public/static/video.mp4";
-
 const Banner = () => {
   useEffect(() => {
     window.onload = () => {
@@ -15,7 +13,14 @@ const Banner = () => {
 
   return (
     <div className={styles.banner}>
-      <video id="autoplay" muted className={styles.video} loop autoPlay>
+      <video
+        id="autoplay"
+        playsInline
+        muted
+        className={styles.video}
+        loop
+        autoPlay
+      >
         <source src={require("../../public/video.mp4")} type="video/mp4" />
       </video>
       <h1 className={styles.Title}>Dare to be great.</h1>
