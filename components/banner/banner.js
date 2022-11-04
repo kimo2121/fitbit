@@ -1,19 +1,25 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import Button from "../button/button";
 import styles from "./banner.module.css";
 import play from "../../public/static/icons/Play.png";
 import Image from "next/image";
-// import video from "../../public/static/video.mp4";
+import ReactPlayer from "react-player";
+
 const Banner = () => {
+  const videoRef = useRef();
+  // useEffect(() => {
+  //   window.onload = () => {
+  //     document.getElementById("autoplay").play();
+  //   };
+  // }, []);
   useEffect(() => {
-    window.onload = () => {
-      document.getElementById("autoplay").play();
-    };
+    videoRef.current.play();
   }, []);
 
   return (
     <div className={styles.banner}>
       <video
+        ref={videoRef}
         id="autoplay"
         playsInline
         muted
