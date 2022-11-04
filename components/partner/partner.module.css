@@ -1,0 +1,65 @@
+.partner {
+  max-width: 1440px;
+  height: 200px;
+  background-color: white;
+  margin: 0 auto;
+}
+.innerPartner {
+  width: 80%;
+  display: flex;
+  height: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.partner p {
+  font-weight: 700;
+  color: #0f0f0f;
+  margin: 0;
+  opacity: 0.7;
+  font-size: 20px;
+}
+.brands {
+  width: 659px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 1440px) {
+  .brands {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .brands img {
+    width: 20%;
+    height: 20%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .partner p {
+    font-size: 16px;
+  }
+  .brands img {
+    width: 16%;
+    height: 16%;
+  }
+  .partner {
+    height: 100px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .partner p {
+    font-size: 14px;
+  }
+  .brands img {
+    width: 16%;
+    height: 16%;
+  }
+  .partner {
+    height: 100px;
+  }
+  .brands {
+    width: 35%;
+  }
+}

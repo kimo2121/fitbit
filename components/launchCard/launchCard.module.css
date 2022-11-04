@@ -1,0 +1,113 @@
+.launchCard {
+  width: 376px;
+  height: fit-content;
+}
+.img {
+  width: 376px;
+  height: 495px;
+}
+
+.cardDetail {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+}
+.cardDetail p {
+  font-size: 16px;
+  color: black;
+}
+
+.launchCard p {
+  font-size: 16px;
+  margin: 0;
+  margin-top: 6px;
+  color: #5f5f5f;
+}
+.cardDetail h3 {
+  font-size: 28px;
+}
+.cardDetail h3,
+.cardDetail p {
+  margin: 0;
+}
+@media screen and (max-width: 1440px) {
+  .launchCard {
+    width: 267px;
+    height: fit-content;
+  }
+  .img {
+    width: 267px;
+    height: 352px;
+  }
+  .cardDetail h3 {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .launchCard {
+    width: 200px;
+    height: fit-content;
+  }
+
+  .img {
+    width: 200px;
+    height: 264px;
+  }
+
+  .cardDetail h3 {
+    font-size: 18px;
+  }
+  .launchCard p {
+    font-size: 14px;
+  }
+  .cardDetail {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .launchCard {
+    width: 170px;
+    height: fit-content;
+  }
+  .img {
+    width: 170px;
+    height: 198px;
+  }
+  .cardDetail h3 {
+    font-size: 16px;
+  }
+  .launchCard p {
+    font-size: 12px;
+    margin: 0;
+    margin-top: 6px;
+    color: #5f5f5f;
+  }
+  .cardDetail {
+    margin-top: 5px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .launchCard {
+    width: 165px;
+    height: fit-content;
+  }
+  .img {
+    width: 165px;
+    height: 198px;
+  }
+  .cardDetail h3 {
+    font-size: 14px;
+  }
+  .launchCard p {
+    font-size: 12px;
+    margin-top: 6px;
+  }
+  .cardDetail {
+    margin-top: 5px;
+  }
+}

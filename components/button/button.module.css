@@ -1,0 +1,213 @@
+.basicStyle {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  cursor: pointer;
+}
+
+.login {
+  background-color: #2e90ea;
+  width: 86px;
+  height: 45px;
+  border-radius: 26px;
+  padding: 14px 24px;
+  color: white;
+  box-sizing: border-box;
+  font-weight: 700;
+  font-size: 14px;
+}
+.login:hover {
+  background-color: transparent;
+  border: 1px solid #2e90ea;
+  color: #2e90ea;
+}
+.bannerBtn1st,
+.bannerBtn2nd,
+.sportsBtn,
+.launchBtn,
+.sampleButton {
+  padding: 16px 25px;
+  width: 171px;
+  height: 51px;
+  color: black;
+  font-weight: 700;
+  font-size: 16px;
+  border: 1px solid white;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-radius: 34px;
+}
+.bannerBtn2nd:hover {
+  background-color: black;
+  border: 1px solid black;
+}
+.bannerBtn1st:hover {
+  color: white;
+  background-color: transparent;
+}
+.bannerBtn2nd,
+.sportsBtn,
+.sampleButton {
+  color: white;
+  width: 207px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+}
+/* .sportsBtn:hover {
+  background-color: white;
+  color: black;
+} */
+.bannerBtn2nd img {
+  margin-right: 10px;
+}
+.sportsBtn,
+.launchBtn {
+  width: 137px;
+}
+.launchBtn {
+  background-color: transparent;
+  color: black;
+  width: 140px;
+  border: 1px solid black;
+}
+.launchBtn:hover {
+  color: white;
+  background-color: black;
+}
+.sampleButton {
+  width: 157px;
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+.sampleButton:hover,
+.sportsBtn:hover {
+  color: #428bc1;
+  background-color: white;
+}
+.subscribe {
+  background-color: #2e90ea;
+  width: 198px;
+  font-weight: 700;
+  border-radius: 34px;
+  font-size: 24px;
+  color: white;
+  height: 61px;
+}
+.subscribe:hover {
+  background-color: transparent;
+  border: 1px solid #2e90ea;
+}
+@media screen and (max-width: 1440px) {
+  .sportsBtn {
+    height: 35px;
+  }
+  .sportsBtn {
+    width: 100px;
+    padding: 16px 10px;
+  }
+  .sampleButton {
+    height: 41px;
+    width: 130px;
+    padding: 16px 10px;
+  }
+  .launchBtn {
+    width: 120px;
+    padding: 16px 10px;
+  }
+  .subscribe {
+    width: 178px;
+    font-size: 22px;
+    height: 51px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .bannerBtn1st {
+    width: 140px;
+    padding: 16px 20px;
+  }
+  .bannerBtn2nd {
+    padding: 16px 20px;
+    width: 170px;
+  }
+  .launchBtn {
+    width: 100px;
+    padding: 16px 10px;
+  }
+  .sportsBtn {
+    width: 100px;
+  }
+  .subscribe {
+    width: 148px;
+    font-size: 20px;
+    height: 41px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .bannerBtn1st,
+  .sportsBtn,
+  .launchBtn {
+    width: 120px;
+    padding: 16px 20px;
+    height: 41px;
+    font-size: 14px;
+  }
+  .bannerBtn2nd {
+    height: 41px;
+    font-size: 14px;
+    padding: 10px 5px;
+    width: 150px;
+    justify-content: center;
+  }
+  .bannerBtn2nd img {
+    margin-right: 5px;
+  }
+  .sportsBtn,
+  .launchBtn {
+    height: 41px;
+    padding: 10px 5px;
+    width: 100px;
+  }
+  .sampleButton {
+    font-size: 14px;
+    height: 31px;
+    width: 100px;
+    padding: 10px 5px;
+  }
+  .subscribe {
+    width: 128px;
+    font-size: 18px;
+    height: 31px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .bannerBtn1st {
+    width: 100px;
+    padding: 16px 10px;
+    height: 31px;
+    font-size: 12px;
+  }
+  .bannerBtn2nd {
+    height: 31px;
+    font-size: 12px;
+    /* padding: 14px 10px; */
+    width: 130px;
+    justify-content: center;
+  }
+  .sportsBtn,
+  .launchBtn {
+    height: 31px;
+    font-size: 12px;
+    width: 80px;
+  }
+  .sampleButton {
+    font-size: 12px;
+    height: 31px;
+    width: 80px;
+    padding: 10px 5px;
+  }
+}

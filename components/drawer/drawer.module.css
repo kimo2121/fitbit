@@ -1,0 +1,32 @@
+.mobNavLinks {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+
+.closeIcon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.closeIcon:hover {
+  opacity: 0.7;
+}
+.navLinks {
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 700;
+  margin: 5px 0;
+}
+.navLinks:hover {
+  opacity: 0.7;
+}
+@media screen and (max-width: 576px) {
+  .navLinks {
+    font-size: 14px;
+  }
+}

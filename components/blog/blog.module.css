@@ -1,0 +1,241 @@
+.blog {
+  max-width: 1240px;
+  margin: 0 auto;
+  margin-top: 120px;
+  position: relative;
+  z-index: 2;
+}
+.container {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 80px;
+  column-gap: 42px;
+}
+.blogSampleLeft {
+  width: 599px;
+  z-index: 2;
+  position: relative;
+  height: 599px;
+}
+.blogSampleRight {
+  z-index: 2;
+  position: relative;
+  width: 599px;
+  height: 279px;
+}
+.blogSampleLeft img {
+  width: 599px;
+  height: 599px;
+}
+.blogSampleRight img {
+  width: 599px;
+  height: 279px;
+}
+.blogSampleLeft img,
+.blogSampleRight img {
+  position: absolute;
+  z-index: 1;
+}
+.containerRight {
+  display: grid;
+  row-gap: 41px;
+}
+.blogSampleLeft h1,
+.blogSampleRight h1 {
+  color: white;
+  margin: 0;
+  font-size: 40px;
+  font-weight: 700;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 24px;
+}
+.blogSampleLeft .sampleDetail {
+  padding-top: 426px;
+  box-sizing: border-box;
+  padding-left: 50px;
+}
+.blogSampleRight .sampleDetail {
+  padding-top: 106px;
+  box-sizing: border-box;
+  padding-left: 50px;
+}
+
+@media screen and (max-width: 1440px) {
+  .container {
+    margin-top: 65px;
+    column-gap: 32px;
+  }
+  .blog {
+    max-width: 900px;
+    margin-top: 85px;
+  }
+  .blogSampleRight {
+    width: 433px;
+    height: 201px;
+  }
+  .blogSampleLeft {
+    width: 433px;
+    height: 433px;
+  }
+  .blogSampleLeft img {
+    width: 433px;
+    height: 433px;
+  }
+  .blogSampleRight img {
+    width: 433px;
+    height: 201px;
+  }
+  .blogSampleLeft .sampleDetail {
+    padding-top: 303px;
+    padding-left: 50px;
+  }
+  .blogSampleRight .sampleDetail {
+    padding-top: 72px;
+    padding-left: 50px;
+  }
+
+  .blogSampleLeft h1,
+  .blogSampleRight h1 {
+    font-size: 26px;
+    margin-bottom: 18px;
+  }
+  .containerRight {
+    display: grid;
+    row-gap: 31px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    margin-top: 50px;
+  }
+  .blog {
+    max-width: 670px;
+    margin-top: 65px;
+  }
+  .blogSampleRight {
+    width: 319px;
+    height: 149px;
+  }
+  .blogSampleLeft {
+    width: 319px;
+    height: 319px;
+  }
+  .blogSampleLeft img {
+    width: 319px;
+    height: 319px;
+  }
+  .blogSampleRight img {
+    width: 319px;
+    height: 149px;
+  }
+  .blogSampleLeft .sampleDetail {
+    padding-top: 207px;
+    padding-left: 30px;
+  }
+  .blogSampleRight .sampleDetail {
+    padding-top: 37px;
+    padding-left: 30px;
+  }
+
+  .blogSampleLeft h1,
+  .blogSampleRight h1 {
+    font-size: 20px;
+    margin-bottom: 16px;
+    line-height: 21px;
+  }
+  .containerRight {
+    display: grid;
+    row-gap: 21px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    margin-top: 20px;
+    column-gap: 21px;
+  }
+  .blog {
+    max-width: 550px;
+    margin-top: 45px;
+  }
+  .blogSampleRight {
+    width: 263px;
+    height: 120px;
+  }
+  .blogSampleLeft {
+    width: 263px;
+    height: 263px;
+  }
+  .blogSampleLeft img {
+    width: 263px;
+    height: 263px;
+  }
+  .blogSampleRight img {
+    width: 263px;
+    height: 120px;
+  }
+  .blogSampleLeft .sampleDetail {
+    padding-top: 167px;
+    padding-left: 20px;
+  }
+  .blogSampleRight .sampleDetail {
+    padding-top: 40px;
+    padding-left: 20px;
+  }
+
+  .blogSampleLeft h1,
+  .blogSampleRight h1 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .containerRight {
+    display: grid;
+    row-gap: 21px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    margin-top: 20px;
+    grid-template-columns: auto;
+    column-gap: 0;
+    row-gap: 21px;
+    justify-items: center;
+  }
+  .blog {
+    max-width: 350px;
+    margin-top: 45px;
+  }
+  .blogSampleRight {
+    width: 350px;
+    height: 159px;
+  }
+  .blogSampleLeft {
+    width: 350px;
+    height: 350px;
+  }
+  .blogSampleLeft img {
+    width: 350px;
+    height: 350px;
+  }
+  .blogSampleRight img {
+    width: 350px;
+    height: 159px;
+  }
+  .blogSampleLeft .sampleDetail {
+    padding-top: 260px;
+    padding-left: 30px;
+  }
+  .blogSampleRight .sampleDetail {
+    padding-top: 72px;
+    padding-left: 30px;
+  }
+  .blogSampleLeft h1,
+  .blogSampleRight h1 {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  .containerRight {
+    display: grid;
+    row-gap: 21px;
+  }
+}

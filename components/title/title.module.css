@@ -1,0 +1,54 @@
+.title h1 {
+  font-weight: 300;
+  font-size: 64px;
+  color: black;
+  margin: 0;
+  margin-bottom: 24px;
+}
+.title {
+  width: fit-content;
+}
+.title span {
+  background-color: #2e90ea;
+  height: 8px;
+  display: block;
+  width: 144px;
+}
+@media screen and (max-width: 1440px) {
+  .title h1 {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .title h1 {
+    margin-bottom: 18px;
+    font-size: 45px;
+  }
+  .title span {
+    height: 8px;
+    width: 102.4px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .title h1 {
+    margin-bottom: 12px;
+    font-size: 26px;
+  }
+  .title span {
+    height: 6px;
+    width: 76.8px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .title {
+    width: fit-content;
+  }
+  .title h1 {
+    margin-bottom: 14px;
+    font-size: 22px;
+  }
+  .title span {
+    height: 4px;
+    width: 57.6px;
+  }
+}
