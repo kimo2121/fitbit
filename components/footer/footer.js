@@ -8,21 +8,44 @@ import USA from "../../public/static/icons/USA.png";
 import Image from "next/image";
 import { Link } from "react-scroll";
 
-import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
-import FormHelperText from "@mui/material/FormHelperText";
-import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
+
 const footerNav = [
-  "Browse Classes",
-  "Shop Now",
-  "Our Studios",
-  "Services",
-  "Pricing",
-  "Our Blogs",
-  "About Us",
-  "Contact Us",
+  {
+    name: "Browse Classes",
+    to: "Browse Classes",
+  },
+  {
+    name: "Shop Now",
+    to: "Shop",
+  },
+  {
+    name: "Our Studios",
+    to: "Our Studios",
+  },
+  {
+    name: "Services",
+    to: "Services",
+  },
+  {
+    name: "Pricing",
+    to: "Pricing",
+  },
+  {
+    name: "Our Blog",
+    to: "Blog",
+  },
+  {
+    name: "About Us",
+    to: "About Us",
+  },
+  {
+    name: "Contact Us",
+    to: "Contact Us",
+  },
 ];
+
 const Footer = () => {
   const [language, setLanguage] = useState("usa");
 
@@ -31,7 +54,7 @@ const Footer = () => {
   };
 
   return (
-    <div className={styles.footer}>
+    <div id="Contact Us" className={styles.footer}>
       <div className={styles.footerTop}>
         <div className={styles.footerTopContainer}>
           <Logo ClassNameAtt="footerLogo" />
@@ -46,11 +69,11 @@ const Footer = () => {
             <Link
               smooth={true}
               duration={1000}
-              to={item}
+              to={item.to}
               className={styles.logoLink}
               key={index}
             >
-              {item}
+              {item.name}
             </Link>
           ))}
         </div>

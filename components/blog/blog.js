@@ -24,7 +24,7 @@ const BlogSample = ({ img, leftSample, label }) => {
 
 const Blog = () => {
   return (
-    <div className={styles.blog}>
+    <div id="Blog" className={styles.blog}>
       <Title title="Our Blogs" />
       <div className={styles.container}>
         <div className={styles.containerLeft}>

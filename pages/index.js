@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import About from "../components/about/About";
+import About from "../components/about/about";
 import Banner from "../components/banner/banner";
 import Blog from "../components/blog/blog";
 import Button from "../components/button/button";
@@ -42,7 +42,7 @@ export default function Home() {
       </div>
       <NewLaunch />
       <Blog />
-      <div className={styles.newsLetter}>
+      <div id="Pricing" className={styles.newsLetter}>
         <div className={styles.newsLetterInner}>
           <div>
             <h1>Subscribe to our</h1>
