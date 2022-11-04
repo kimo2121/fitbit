@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Button from "../button/button";
 import styles from "./banner.module.css";
 import play from "../../public/static/icons/Play.png";
@@ -7,10 +7,13 @@ import ReactPlayer from "react-player";
 // import video from "../../public/static/video.mp4";
 
 const Banner = () => {
+  useEffect(() => {
+    document.getElementById("autoplay").play();
+  }, []);
   return (
     <div className={styles.banner}>
-      <video className={styles.video} width="320" height="240" loop autoPlay>
-        <source src={require("../../public/video.mp4")} />
+      <video id="autoplay" className={styles.video} loop autoPlay>
+        <source src={require("../../public/video.mp4")} type="video/mp4" />
       </video>
       <h1 className={styles.Title}>Dare to be great.</h1>
       <div className={styles.btns}>
