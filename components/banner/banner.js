@@ -10,9 +10,10 @@ const Banner = () => {
   useEffect(() => {
     document.getElementById("autoplay").play();
   }, []);
+
   return (
     <div className={styles.banner}>
-      <video id="autoplay" className={styles.video} loop autoPlay>
+      <video id="autoplay" muted className={styles.video} loop autoPlay>
         <source src={require("../../public/video.mp4")} type="video/mp4" />
       </video>
       <h1 className={styles.Title}>Dare to be great.</h1>
