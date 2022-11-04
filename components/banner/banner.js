@@ -8,7 +8,9 @@ import ReactPlayer from "react-player";
 
 const Banner = () => {
   useEffect(() => {
-    document.getElementById("autoplay").play();
+    window.onload = () => {
+      document.getElementById("autoplay").play();
+    };
   }, []);
 
   return (
