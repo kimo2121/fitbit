@@ -36,6 +36,9 @@
   z-index: 1;
   width: 100%;
   height: auto;
+  --controls: none;
+}
+.mux-player {
 }
 
 @media screen and (max-width: 1440px) {
